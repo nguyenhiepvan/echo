@@ -7,14 +7,14 @@
         "pusher",
         "socket.io"
     ],
-    "homepage": "https://github.com/laravel/echo",
+    "homepage": "https://github.com/nguyenhiepvan/echo",
     "repository": {
         "type": "git",
-        "url": "https://github.com/laravel/echo"
+        "url": "https://github.com/nguyenhiepvan/echo"
     },
     "license": "MIT",
     "author": {
-        "name": "Taylor Otwell"
+        "name": "Hiep Nguyen Van"
     },
     "main": "dist/echo.common.js",
     "module": "dist/echo.js",
