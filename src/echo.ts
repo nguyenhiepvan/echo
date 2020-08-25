@@ -153,14 +153,11 @@ export default class Echo {
      * Register jQuery AjaxPrefilter to add the X-Socket-ID header.
      */
     registerjQueryAjaxSetup(): void {
-        jQuery.ajaxSetup({
-            beforeSend: function beforeSend(xhr) {
-                xhr.setRequestHeader = function(name, value) {
-                    if (name == 'X-Requested-With' || name == "X-Socket-Id") return;
-                    setRequestHeader.call(this, name, value);
-                    setRequestHeader.call(this, 'Access-Control-Allow-Origin', "*");
-                }
-            }
-        });
+        // var _this3 = this;
+        // jQuery.ajaxSetup({
+        //     beforeSend: function beforeSend(xhr) {
+        //         xhr.setRequestHeader('X-Socket-Id', _this3.socketId());
+        //     }
+        // });
     }
 }
